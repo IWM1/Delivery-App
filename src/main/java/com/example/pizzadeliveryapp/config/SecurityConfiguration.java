@@ -25,13 +25,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         auth.userDetailsService(userService);
     }
-
     @Override
     @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf()
