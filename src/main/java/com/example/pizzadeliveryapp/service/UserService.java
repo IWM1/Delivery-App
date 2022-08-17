@@ -13,9 +13,7 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-
-        //Logic to get the user form the Database
-
+        
         return new User("admin","admin123",new ArrayList<>());
     }
 }
