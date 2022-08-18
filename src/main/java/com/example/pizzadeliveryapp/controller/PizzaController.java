@@ -53,5 +53,4 @@ public class PizzaController {
         logger.trace("Accessing deletePizzaById method");
         return new ResponseEntity<>( HttpStatus.OK);
     }
-
 }
